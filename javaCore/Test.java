@@ -14,7 +14,7 @@ public class Test {
         ByteBuffer buffer = ByteBuffer.allocate(1024);
         String string = "java nio";
         buffer.put(string.getBytes());
-        buffer.flip();     //此处必须要调用buffer的flip方法
+        buffer.flip();     //此处必须要调用buffer的 flip方法
         channel.write(buffer);
         channel.close();
         outputStream.close();
